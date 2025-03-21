@@ -110,7 +110,7 @@ struct modbus_context {
 	/* Interface state */
 	atomic_t state;
 
-	/* Client's mutually exclusive access */
+	/* Interface lock */
 	struct k_mutex iface_lock;
 	/* Wait for response semaphore */
 	struct k_sem client_wait_sem;

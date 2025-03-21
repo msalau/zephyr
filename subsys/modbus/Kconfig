@@ -85,6 +85,11 @@ config MODBUS_NONCOMPLIANT_SERIAL_MODE
 	help
 	  Allow non-compliant stop and parity bit settings.
 
+config MODBUS_LOCKING
+	bool "Interface locking support"
+	help
+	  Enable interface locking support
+
 module = MODBUS
 module-str = Modbus Support
 module-help = Sets log level for Modbus support
